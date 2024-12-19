@@ -6,7 +6,7 @@ Cypress.Commands.add('registr', () => {
     cy.get('.signup-form > h2').should('have.text',"New User Signup!")
     //6. Enter name and email address
     cy.get('[data-qa="signup-name"]').type("Ana")
-    cy.get('[data-qa="signup-email"]').type("artilakva29@gmail.com")
+    cy.get('[data-qa="signup-email"]').type("artilakva1121@gmail.com")
     //7. Click 'Signup' button
     cy.get('[data-qa="signup-button"]').click()
     //8. Verify that 'ENTER ACCOUNT INFORMATION' is visible
@@ -14,7 +14,7 @@ Cypress.Commands.add('registr', () => {
     //9. Fill details: Title, Name, Email, Password, Date of birth
     cy.get('.clearfix > :nth-child(1)').click()
     cy.get('[data-qa="name"]').should('have.value',"Ana")
-    cy.get('[data-qa="email"]').should('have.value',"artilakva29@gmail.com")
+    cy.get('[data-qa="email"]').should('have.value',"artilakva1121@gmail.com")
     cy.get('[data-qa="password"]').type('111111')
     cy.get('[data-qa="days"]').type('8')
     cy.get('[data-qa="months"]').type('11')
